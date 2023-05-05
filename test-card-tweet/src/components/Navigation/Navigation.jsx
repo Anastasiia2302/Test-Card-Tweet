@@ -1,20 +1,19 @@
-import { NavLink, Outlet } from "react-router-dom";
-import { Suspense } from "react";
-import { Header } from "./Navigation.styled";
-import { Loader } from "../Loader/Loader";
+import { Container } from "../GlobalStyle.styled";
+import { Header, Link } from "./Navigation.styled";
+
 
 export const Navigation = () => {
   return (
-    <>
+    
+    <Container>
       <Header>
         <nav>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/tweets">Tweets</NavLink>
+          <Link to="/">Home</Link>
+          <Link to="/tweets">Tweets</Link>
         </nav>
+      
       </Header>
-      {/* <Suspense fallback={<Loader />}>
-        <Outlet />
-      </Suspense> */}
-    </>
+      </Container>
+    
   );
 };
