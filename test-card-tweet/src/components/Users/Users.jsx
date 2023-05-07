@@ -1,4 +1,4 @@
-import { Button } from "../ButtonFollower/Button";
+import { Button } from "../Button/Button";
 import { UsersItems, UsersList } from "./Users.styled";
 
 export const Users = (props) => {
@@ -11,8 +11,8 @@ export const Users = (props) => {
       {users.map((user) => (
         <UsersItems key={user.id}>
           <div>
-          <img src={require('../../images/logo.png')} />
-          <img src={require('../../images/picture.png')} />
+          <img src={require('../../images/logo.png')} alt='logo'/>
+          <img src={require('../../images/picture.png')} alt='logo' />
           </div>
         
           <li>

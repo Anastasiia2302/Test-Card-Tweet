@@ -7,7 +7,7 @@ export const Button = () => {
         <BtnText>Follow</BtnText>
       </BtnFollow>
       <BtnFollowing type="button">
-        <BtnText>Follow</BtnText>
+        <BtnText>Following</BtnText>
       </BtnFollowing>
     </>
   );

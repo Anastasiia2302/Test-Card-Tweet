@@ -1,11 +1,10 @@
 import { GoBack } from "../../components/GoBack/GoBack";
 import { Users } from "../../components/Users/Users";
-import { Api } from "../../services/Api";
 import { Container } from "./Tweets.styled";
-
+import {Api} from '../../services/Api'
 
 const Tweets = () => {
-const apiState = Api();
+  const apiState = Api();
   return (
     <main>
       <Container>
