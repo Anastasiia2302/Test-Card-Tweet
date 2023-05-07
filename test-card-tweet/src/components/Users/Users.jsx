@@ -19,6 +19,7 @@ export const Users = (props) => {
         
           <UsersItems>
            <Avatar  src={user.avatar} alt="avatar" width={62} height={62}/>
+           
           </UsersItems>
           <UsersItems>{user.user}</UsersItems>
           <UsersItems>{user.tweets} Tweets</UsersItems>
