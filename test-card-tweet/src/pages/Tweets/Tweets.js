@@ -15,8 +15,6 @@ const Tweets = () => {
     <main>
       <Container>
       <GoBack to={"/"}>Go back</GoBack>
-        <h1>Tweets page</h1>
-
         <Users users={users}/>
 <button type='button' onClick={handleClick}> Load More</button>
       </Container>

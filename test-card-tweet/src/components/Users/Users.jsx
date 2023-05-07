@@ -1,28 +1,30 @@
 import { Button } from "../Button/Button";
-import { UsersItems, UsersList } from "./Users.styled";
+import { Avatar, BgFoto, ImageBox, Logo, UsersCard, UsersItems, UsersList } from "./Users.styled";
 
 export const Users = (props) => {
   const { users } = props;
 
-  if (!users || Users.length === 0) return <p>Sorry you don`t have friends </p>;
+  if (!users || users.length === 0) return <p>Sorry, you don`t have friends </p>;
   return (
     <UsersList>
      
       {users.map((user) => (
-        <UsersItems key={user.id}>
-          <div>
-          <img src={require('../../images/logo.png')} alt='logo'/>
-          <img src={require('../../images/picture.png')} alt='logo' />
-          </div>
+        <UsersCard key={user.id}>
+          <ImageBox>
+          <Logo src={require('../../images/logo.png')} alt='logo'/>
+          </ImageBox>
+          <BgFoto src={require('../../images/picture.png')} alt='logo' />
+          
+          
         
-          <li>
-           <img  src={user.avatar} alt="avatar"/>
-          </li>
-          <li>{user.user}</li>
-          <li>{user.tweets} Tweets</li>
-          <li>{user.followers} Followers</li>
+          <UsersItems>
+           <Avatar  src={user.avatar} alt="avatar" width={62} height={62}/>
+          </UsersItems>
+          <UsersItems>{user.user}</UsersItems>
+          <UsersItems>{user.tweets} Tweets</UsersItems>
+          <UsersItems>{user.followers} Followers</UsersItems>
           <Button />
-        </UsersItems>
+        </UsersCard>
         
       ))}
       
