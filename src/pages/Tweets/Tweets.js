@@ -1,6 +1,6 @@
 import { GoBack } from "../../components/GoBack/GoBack";
 import { Users } from "../../components/Users/Users";
-import { Container } from "./Tweets.styled";
+import { Container, LoadMore } from "./Tweets.styled";
 import {Api} from '../../services/Api'
 
 
@@ -16,7 +16,7 @@ const Tweets = () => {
       <Container>
       <GoBack to={"/"}>Go back</GoBack>
         <Users users={users}/>
-<button type='button' onClick={handleClick}> Load More</button>
+        <LoadMore type='button' onClick={handleClick}> Load More</LoadMore>
       </Container>
     </main>
   );
