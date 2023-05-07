@@ -2,7 +2,7 @@
   "name": "test-card-tweet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anastasiia2302.github.io/TEST-CARD-TWEET/",
+  "homepage": "https://anastasiia2302.github.io/Test-Card-Tweet/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
