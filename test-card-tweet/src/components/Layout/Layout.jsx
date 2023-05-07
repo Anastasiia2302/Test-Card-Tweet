@@ -5,9 +5,7 @@ import { Navigation } from "../Navigation/Navigation";
 export const Layout = () => {
   return (
     <>
-      
-        <Navigation />
-      
+      <Navigation />
 
       <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
