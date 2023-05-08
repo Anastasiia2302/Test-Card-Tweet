@@ -7,7 +7,7 @@ import {Api} from '../../services/Api'
 
 const Tweets = () => {
 
-const [users, setPage, showBtn] = Api();
+const [users, setPage] = Api();
 
 
 
@@ -19,7 +19,7 @@ const [users, setPage, showBtn] = Api();
       <Container>
       <GoBack to={"/"}>Go back</GoBack>
         <Users users={users}/>
-       {showBtn && <LoadMore type='button' onClick={handleClick}> Load More</LoadMore>} 
+       <LoadMore type='button' onClick={handleClick}> Load More</LoadMore>
       </Container>
     </main>
   );

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export const Api = () => {
   const [page, setPage] = useState(1);
   const [user, setUser] = useState([]);
-  const [showBtn, setShowBtn] = useState(false);
+  // const [showBtn, setShowBtn] = useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -20,8 +20,8 @@ export const Api = () => {
 
           setUser((prev) => [...prev, ...allUsers]);
         });
-        setShowBtn(setUser.length === 0)
-        setShowBtn(true)
+        // setShowBtn(setUser.length === 0)
+        // setShowBtn(true)
     };
     fetchUsers();
     return () => {
