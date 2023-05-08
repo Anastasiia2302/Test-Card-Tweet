@@ -19,7 +19,7 @@ const [users, setPage] = Api();
       <Container>
       <GoBack to={"/"}>Go back</GoBack>
         <Users users={users}/>
-       <LoadMore type='button' onClick={handleClick}> Load More</LoadMore>
+     <LoadMore type='button' onClick={handleClick}> Load More</LoadMore>
       </Container>
     </main>
   );

@@ -24,7 +24,7 @@ export const Users = (props) => {
           <UsersItems>{user.user}</UsersItems>
           <UsersItems>{user.tweets} Tweets</UsersItems>
           <UsersItems>{user.followers} Followers</UsersItems>
-          <Button />
+          <Button type='button'/>
         </UsersCard>
         
       ))}

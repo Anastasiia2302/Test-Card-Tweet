@@ -12,5 +12,21 @@ border-radius: 20px;
 `
 export const LoadMore = styled.button`
 
+margin: 0 auto;
+padding: 8px;
+border-radius: 2px;
+background-color: rgb(59, 53, 145);
+text-align: center;
+display: flex;
+color: ;
+border: 0;
+text-decoration: none;
+cursor: pointer;
+
+
+&:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.03);
 `
 

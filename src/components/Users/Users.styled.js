@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 
 export const UsersList = styled.div`
+margin-bottom:20px;
 display:flex;
 flex-wrap: wrap;
 gap:10px;
@@ -36,7 +37,6 @@ margin-top:28px;
 
 export const UsersItems = styled.li`
 text-align: center ;
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
