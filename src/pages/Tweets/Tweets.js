@@ -4,10 +4,13 @@ import { Container, LoadMore } from "./Tweets.styled";
 import {Api} from '../../services/Api'
 
 
+
 const Tweets = () => {
-  
-  const [users, setPage] = Api();
- 
+
+const [users, setPage, showBtn] = Api();
+
+
+
  const handleClick = () => {
   setPage(prev => prev + 1 )
  }
@@ -16,7 +19,7 @@ const Tweets = () => {
       <Container>
       <GoBack to={"/"}>Go back</GoBack>
         <Users users={users}/>
-        <LoadMore type='button' onClick={handleClick}> Load More</LoadMore>
+       {showBtn && <LoadMore type='button' onClick={handleClick}> Load More</LoadMore>} 
       </Container>
     </main>
   );
