@@ -19,14 +19,18 @@ export const Api = () => {
           const allUsers = resp.data;
 
           setUser((prev) => [...prev, ...allUsers]);
+          
+         
         });
        
-         
+        
     };
+   
     fetchUsers();
     return () => {
       controller.abort();
     };
+    
   }, [page]);
 
   return [user, setPage];
